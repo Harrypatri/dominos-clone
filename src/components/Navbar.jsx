@@ -25,7 +25,7 @@ function Navbar(props) {
       <div style={{ display: 'flex', alignItems: 'stretch', height: '70px' }}>
 
         {/* Logo */}
-        <Link to="/" style={{ padding: '0 5rem', display: 'flex', alignItems: 'center', borderRight: '1px solid rgba(255,255,255,0.18)', flexShrink: 0 }}>
+        <Link to="/" style={{ padding: '0 5rem', display: 'flex', alignItems: 'center', borderRight: '1px solid rgba(255,255,255,0.18)', border:"none", flexShrink: 0 }}>
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Domino%27s_pizza_logo.svg/200px-Domino%27s_pizza_logo.svg.png"
             alt="Domino's"
@@ -34,16 +34,16 @@ function Navbar(props) {
         </Link>
 
         {/* ORDER ONLINE — stacked */}
-        <Link to="/" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#fff', fontFamily: "'Roboto Condensed', sans-serif", fontWeight: 900, fontSize: '13px', letterSpacing: '1.5px', textTransform: 'uppercase', textDecoration: 'none', padding: '0 2rem', borderRight: '1.5px solid rgba(255,255,255,0.18)', whiteSpace: 'nowrap', border: "none", lineHeight: 1.2 }}>
+        <Link to="/" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#fff', fontFamily: "'Roboto Condensed', sans-serif", fontWeight: 900, fontSize: '13px', letterSpacing: '1.5px', textTransform: 'uppercase', textDecoration: 'none', padding: '0 3rem', border:'none', borderRight: '1px solid rgba(255,255,255,0.18)', whiteSpace: 'nowrap', lineHeight: 1.2 }}>
           <span>ORDER</span>
           <span>ONLINE</span>
         </Link>
 
         {/* MENU */}
-        <Link to="/" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#fff', fontFamily: "'Roboto Condensed', sans-serif", fontWeight: 900, fontSize: '13px', letterSpacing: '1.5px', textTransform: 'uppercase', textDecoration: 'none', padding: '0 2rem', borderRight: '1.5px solid rgba(255,255,255,0.18)', whiteSpace: 'nowrap', border: "none", lineHeight: 1.2 }}>MENU</Link>
+        <Link to="/menu" style={linkStyle}>MENU</Link>
 
         {/* DEALS */}
-        <Link to="/" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#fff', fontFamily: "'Roboto Condensed', sans-serif", fontWeight: 900, fontSize: '13px', letterSpacing: '1.5px', textTransform: 'uppercase', textDecoration: 'none', padding: '0 2rem', borderRight: '1.5px solid rgba(255,255,255,0.18)', whiteSpace: 'nowrap', border: "none", lineHeight: 1.2 }}>DEALS</Link>
+        <Link to="/deals" style={linkStyle}>DEALS</Link>
 
         {/* STORES */}
         <a href="#" style={linkStyle}>STORES</a>
@@ -100,12 +100,12 @@ function Navbar(props) {
           fontSize: '11px',
           letterSpacing: '1.5px',
           textTransform: 'uppercase',
-          padding: '0 6rem',
+          padding: '0 4rem',
           cursor: 'pointer',
           minWidth: '90px',
           height: '100%'
         }}>
-          <svg viewBox="0 0 24 24" fill="currentColor" style={{ width: '30px', height: '26px' }}>
+          <svg viewBox="0 0 24 24" fill="currentColor" style={{ width: '26px', height: '26px' }}>
             <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
           </svg>
           SIGN IN
@@ -118,7 +118,7 @@ function Navbar(props) {
           alignItems: 'center',
           justifyContent: 'center',
           gap: '3px',
-          background: 'rgba(0,0,0,0.25)',
+          background: 'rgba(0, 0, 0, 0.25)',
           border: 'none',
           borderLeft: '1px solid rgba(255,255,255,0.18)',
           color: '#fff',
@@ -127,7 +127,7 @@ function Navbar(props) {
           fontSize: '11px',
           letterSpacing: '1.5px',
           textTransform: 'uppercase',
-          padding: '3 1rem',
+          padding: '0 4rem',
           cursor: 'pointer',
           minWidth: '80px',
           height: '100%',
